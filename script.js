@@ -18,8 +18,6 @@ const choices = [
     "Scissors"
 ];
 
-let running = false;
-
 //random computer choice
 function computerPlay() {
    return choices[Math.floor(Math.random() * choices.length)];
@@ -29,6 +27,7 @@ function computerPlay() {
 let playerScoreNum = playerScore.innerText;
 let computerScoreNum = computerScore.innerText;
 
+//main game function
 function playGame(player, computer) {
 
     if (player == computer) {
@@ -65,6 +64,7 @@ function winGame() {
     resetBtn.classList.remove("hide");
 }
 
+//reset scores, show choices, and hide reset button
 function resetGame() {
     playerScoreNum = 0;
     computerScoreNum = 0;
