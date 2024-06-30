@@ -47,10 +47,10 @@ function playGame(player, computer) {
     }
     
     //when score reaches 10 stop game and run winGame function
-    if (playerScoreNum == 10) {
+    if (playerScoreNum == 5) {
         message.innerText = "You win!";
         winGame();
-    }else if (computerScoreNum == 10) {
+    }else if (computerScoreNum == 5) {
         message.innerText = "Computer wins!";
         winGame();
     }
